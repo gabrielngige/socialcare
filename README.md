@@ -52,8 +52,8 @@ Simply open any of the HTML files in a web browser to navigate through the site.
 
 Contributions are:
    Gabriel Ngige.
-   keith Muturi.
-   Samsom Morara.
+   keith Mutugi.
+   Samson Morara.
    Ryan Guchu.
 
 ## License
