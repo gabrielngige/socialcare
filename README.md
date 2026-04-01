@@ -50,7 +50,7 @@ Simply open any of the HTML files in a web browser to navigate through the site.
 
 ## Contributors
 
-Contributions are:
+Contributors:
    Gabriel Ngige.
    keith Mutugi.
    Samson Morara.
