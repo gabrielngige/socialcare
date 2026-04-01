@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialCare Slides</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slide-panel {
+      display: none;
+    }
+
+    #slide-1:checked ~ main .slide-panel-1,
+    #slide-2:checked ~ main .slide-panel-2,
+    #slide-3:checked ~ main .slide-panel-3,
+    #slide-4:checked ~ main .slide-panel-4,
+    #slide-5:checked ~ main .slide-panel-5 {
+      display: block;
+    }
+
+    .slide-counter {
+      display: none;
+    }
+
+    #slide-1:checked ~ main .slide-counter-1,
+    #slide-2:checked ~ main .slide-counter-2,
+    #slide-3:checked ~ main .slide-counter-3,
+    #slide-4:checked ~ main .slide-counter-4,
+    #slide-5:checked ~ main .slide-counter-5 {
+      display: block;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-green-50 via-white to-emerald-100 text-gray-800">
+
+<input type="radio" name="slides" id="slide-1" class="hidden" checked>
+<input type="radio" name="slides" id="slide-2" class="hidden">
+<input type="radio" name="slides" id="slide-3" class="hidden">
+<input type="radio" name="slides" id="slide-4" class="hidden">
+<input type="radio" name="slides" id="slide-5" class="hidden">
+
+<nav class="bg-green-600 text-white p-4 flex justify-between">
+  <h1 class="font-bold text-xl">SocialCare</h1>
+  <div class="space-x-4">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="slides.html" class="font-semibold underline">Slides</a>
+  </div>
+</nav>
+
+<main class="px-4 py-8 md:px-8">
+  <section class="mx-auto max-w-5xl">
+    <div class="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-green-700">Presentation</p>
+        <h2 class="text-3xl font-bold text-green-800 md:text-4xl">SocialCare Project Slides</h2>
+      </div>
+      <p class="text-sm text-gray-600">Use the buttons below to move through the slides.</p>
+    </div>
+
+    <div class="relative overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-green-100">
+      <article class="slide-panel slide-panel-1 min-h-[520px] p-8 md:p-12">
+        <div class="flex h-full flex-col justify-between gap-8">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-green-700">Slide 1</p>
+            <h3 class="mb-4 text-4xl font-bold text-green-800 md:text-6xl">SocialCare</h3>
+            <p class="max-w-2xl text-lg leading-8 text-gray-700">
+              This is our SocialCare website project. We created it to show the main services offered by a
+              social support organization in a simple and clear way.
+            </p>
+          </div>
+          <div class="grid gap-4 md:grid-cols-3">
+            <div class="rounded-2xl bg-green-50 p-5">
+              <p class="text-sm font-semibold text-green-700">Purpose</p>
+              <p class="mt-2">To present social care services in an easy way for users to understand.</p>
+            </div>
+            <div class="rounded-2xl bg-emerald-50 p-5">
+              <p class="text-sm font-semibold text-green-700">Users</p>
+              <p class="mt-2">People looking for support, information, and contact details.</p>
+            </div>
+            <div class="rounded-2xl bg-lime-50 p-5">
+              <p class="text-sm font-semibold text-green-700">Tools</p>
+              <p class="mt-2">Built using HTML and Tailwind CSS.</p>
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <label for="slide-2" class="cursor-pointer rounded-full bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Next</label>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide-panel slide-panel-2 min-h-[520px] p-8 md:p-12">
+        <div class="grid h-full gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-green-700">Slide 2</p>
+            <h3 class="mb-4 text-3xl font-bold text-green-800 md:text-5xl">Pages In The Website</h3>
+            <div class="space-y-4 text-lg text-gray-700">
+              <p><span class="font-semibold text-green-700">Home page:</span> welcomes the user and gives a short introduction.</p>
+              <p><span class="font-semibold text-green-700">About page:</span> explains what SocialCare is about.</p>
+              <p><span class="font-semibold text-green-700">Services page:</span> shows the main services provided.</p>
+              <p><span class="font-semibold text-green-700">Contact page:</span> allows users to send a message.</p>
+            </div>
+          </div>
+          <div class="rounded-3xl bg-green-600 p-8 text-white shadow-lg">
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-green-100">Main Idea</p>
+            <p class="mt-4 text-2xl font-bold leading-10">
+              The website is meant to be simple, direct, and easy to use.
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-between">
+          <label for="slide-1" class="cursor-pointer rounded-full bg-gray-900 px-5 py-3 font-semibold text-white transition hover:bg-gray-800">Previous</label>
+          <label for="slide-3" class="cursor-pointer rounded-full bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Next</label>
+        </div>
+      </article>
+
+      <article class="slide-panel slide-panel-3 min-h-[520px] p-8 md:p-12">
+        <div class="flex h-full flex-col justify-between gap-8">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-green-700">Slide 3</p>
+            <h3 class="mb-4 text-3xl font-bold text-green-800 md:text-5xl">Main Services</h3>
+          </div>
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-2xl border border-green-100 bg-white p-6 shadow-sm">
+              <h4 class="text-xl font-bold text-green-700">Community Help</h4>
+              <p class="mt-2 text-gray-600">Help for families and individuals in need.</p>
+            </div>
+            <div class="rounded-2xl border border-green-100 bg-white p-6 shadow-sm">
+              <h4 class="text-xl font-bold text-green-700">Education</h4>
+              <p class="mt-2 text-gray-600">Support through learning resources and education programs.</p>
+            </div>
+            <div class="rounded-2xl border border-green-100 bg-white p-6 shadow-sm">
+              <h4 class="text-xl font-bold text-green-700">Health Support</h4>
+              <p class="mt-2 text-gray-600">Guidance and support related to healthcare services.</p>
+            </div>
+            <div class="rounded-2xl border border-green-100 bg-white p-6 shadow-sm">
+              <h4 class="text-xl font-bold text-green-700">Counseling</h4>
+              <p class="mt-2 text-gray-600">Support for emotional and mental wellbeing.</p>
+            </div>
+            <div class="rounded-2xl border border-green-100 bg-white p-6 shadow-sm md:col-span-2 lg:col-span-1">
+              <h4 class="text-xl font-bold text-green-700">Food Programs</h4>
+              <p class="mt-2 text-gray-600">Food assistance for families and community members.</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <label for="slide-2" class="cursor-pointer rounded-full bg-gray-900 px-5 py-3 font-semibold text-white transition hover:bg-gray-800">Previous</label>
+            <label for="slide-4" class="cursor-pointer rounded-full bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Next</label>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide-panel slide-panel-4 min-h-[520px] p-8 md:p-12">
+        <div class="grid h-full gap-8 md:grid-cols-2 md:items-center">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-green-700">Slide 4</p>
+            <h3 class="mb-4 text-3xl font-bold text-green-800 md:text-5xl">Tools Used</h3>
+            <ul class="space-y-4 text-lg text-gray-700">
+              <li class="rounded-2xl bg-green-50 p-4"><span class="font-semibold text-green-700">HTML5</span> to create the pages and structure</li>
+              <li class="rounded-2xl bg-emerald-50 p-4"><span class="font-semibold text-green-700">Tailwind CSS</span> to style the website</li>
+              <li class="rounded-2xl bg-lime-50 p-4"><span class="font-semibold text-green-700">Responsive layout</span> so it can work on different screen sizes</li>
+            </ul>
+          </div>
+          <div class="rounded-3xl bg-gray-900 p-8 text-green-100 shadow-xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-green-300">Why We Chose Them</p>
+            <p class="mt-4 text-2xl font-bold text-white">They are simple to use and good for a static website project.</p>
+            <p class="mt-4 leading-8">
+              These tools helped us build the project faster and keep the design neat and responsive.
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-between">
+          <label for="slide-3" class="cursor-pointer rounded-full bg-gray-900 px-5 py-3 font-semibold text-white transition hover:bg-gray-800">Previous</label>
+          <label for="slide-5" class="cursor-pointer rounded-full bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Next</label>
+        </div>
+      </article>
+
+      <article class="slide-panel slide-panel-5 min-h-[520px] p-8 md:p-12">
+        <div class="flex h-full flex-col justify-between gap-8">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-green-700">Slide 5</p>
+            <h3 class="mb-4 text-3xl font-bold text-green-800 md:text-5xl">Team</h3>
+            <p class="max-w-2xl text-lg text-gray-700">
+              This project was done as a group project by the following team members.
+            </p>
+          </div>
+          <div class="grid gap-5 md:grid-cols-2">
+            <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-green-100">
+              <p class="text-2xl font-bold text-green-700">Gabriel Ngige</p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-green-100">
+              <p class="text-2xl font-bold text-green-700">Keith Mutugi</p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-green-100">
+              <p class="text-2xl font-bold text-green-700">Samson Morara</p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-green-100">
+              <p class="text-2xl font-bold text-green-700">Ryan Guchu</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <label for="slide-4" class="cursor-pointer rounded-full bg-gray-900 px-5 py-3 font-semibold text-white transition hover:bg-gray-800">Previous</label>
+            <label for="slide-1" class="cursor-pointer rounded-full bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Back to Start</label>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-6 text-sm font-medium text-gray-600">
+      <p class="slide-counter slide-counter-1">Slide 1 of 5</p>
+      <p class="slide-counter slide-counter-2">Slide 2 of 5</p>
+      <p class="slide-counter slide-counter-3">Slide 3 of 5</p>
+      <p class="slide-counter slide-counter-4">Slide 4 of 5</p>
+      <p class="slide-counter slide-counter-5">Slide 5 of 5</p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
